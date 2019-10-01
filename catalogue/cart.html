@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../css/task7.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="theHeading" class="body">
+    <h1 id="myDIV">Rudi's Online Store<a href="../index.html" class="previous float-right" style="font-size:30px">&laquo; Previous</a></h1>
+        <div class="text-center">
+
+            <h3><u>Products</u></h3>
+            <br />
+            <h4 id="Stuff"></h4>
+            <br>
+            <!-- Display total amount here -->
+            <u>
+                <article id="itemTotal">Total: R</article>
+            </u>
+            <br>
+            <!-- delivery option -->
+            <h4>Would you like us to deliver:</h4>
+            <p>Delivery cost is R650.00</p>
+            <input onclick="radio()" id="yes" type="radio" name="deliver" value="yes"/> Delivery<br>
+            <input onclick="radio()" id="no" type="radio" name="deliver" value="no"/> Collection<br>
+            <br>
+            <br>
+            <!-- calculate final total -->
+            <button class="btn btn-primary" onclick="getPrice()">Get total</button>
+            <br><br>
+            <!-- Display final total -->
+            <input placeholder="total" id="total" />
+            <br>
+            <br>
+            <!-- confirm purchase -->
+            <button class="btn btn-primary" onclick="confirm()">Place Your Order</button>
+        </div>
+        </div>
+
+        <script src="cart.js"></script>
+</body>
+
+</html>

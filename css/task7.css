@@ -1,0 +1,218 @@
+/*this code styles all the h1 heading*/
+
+h1 {
+  padding: 10px;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+
+/*this code styles the body*/
+
+.body {
+  background: black;
+  color: white;
+  font-style: bold;
+}
+
+
+/*this code style align the links to the right of the page*/
+
+.right {
+  float: right;
+  font-size: 20px;
+  font-style: italic;
+  padding-top: 20px;
+  word-spacing: 10px;
+  color: white;
+}
+
+
+/*when you hover over the link it will change the bg and the color of the text and resize the links*/
+
+.right:hover {
+  background: black;
+  color: red;
+  font-style: oblique;
+  padding: 10px;
+}
+
+
+/*this code styles 0the tables*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+/*this code changes the color of the bg heading on the h1 tag*/
+
+#myDIV {
+  background: red;
+  -webkit-animation: mymove 15s infinite;
+  /* Chrome, Safari, Opera */
+  animation: mymove 15s infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes mymove {
+  0% {
+    background-color: aqua;
+  }
+  33% {
+    background-color: green;
+  }
+  67% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+
+/* Standard syntax */
+
+@keyframes mymove {
+  0% {
+    background-color: aqua;
+  }
+  33% {
+    background-color: green;
+  }
+  67% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/*this code styles the top banner below the nav bar*/
+
+.h2bg {
+	background: purple;
+	color: black;
+	height: 45px;
+}
+
+
+/*this code style the footer*/
+
+.a {
+	font-size: 25px;
+}
+
+
+/*this code sets padding to the images*/
+
+.padding {
+	padding: 25px;
+	border: 10px;
+}
+
+
+/*this code styles the buttons raduis*/
+
+div button {
+	border-radius: 10%;
+}
+
+
+/*this code blurs out the images*/
+
+div img {
+	filter: blur(5px);
+}
+
+
+/*when you hover over the images it becomes clear and increases in size*/
+
+div img:hover {
+	filter: none;
+	transform: scale(1.5);
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	padding: 50px;
+	transition: transform .2s;
+	/* Animation */
+	margin: 0 auto;
+}
+
+/*this code sets the font size on the page*/
+
+.font {
+  font-size: 40px;
+}
+
+
+/*this code centers the image*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
+/*this code set animationfor the span in html*/
+
+.centeranima {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  background: aqua;
+}
+
+#wordschange {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#wordschange:before {
+  content: "us";
+  animation: animate infinite 8s;
+}
+
+@keyframes animate {
+  0% {
+      content: "Dual Pixel";
+  }
+  25% {
+      content: "5 EV AF";
+  }
+  50% {
+      content: "26.2 MEGAPIXELS";
+  }
+  75% {
+      content: "4k VIDEO";
+  }
+  100% {
+      content: "Eye AF";
+  }
+}
+
+.line{
+  border: 0.5px solid white;
+}
