@@ -28,9 +28,12 @@
             <!-- delivery option -->
             <h4>Would you like us to deliver:</h4>
             <p>Delivery cost is R650.00</p>
-            <input onclick="radio()" id="yes" type="radio" name="deliver" value="yes"/> Delivery<br>
-            <input onclick="radio()" id="no" type="radio" name="deliver" value="no"/> Collection<br>
+            <input onclick="radio()" id="delivery" type="radio" value="yes"/> Delivery<br>
+            <input onclick="radio()" id="collection" type="radio" value="no"/> Collection<br>
             <br>
+            <h4>Click yes if you would like a discount of R3000</h4>
+            <input onclick="discount()" id="coupon" type="radio" value="yes"/> Yes<br>
+            <input onclick="discount()" id="discountNo" type="radio" value="no"/> No<br>
             <br>
             <!-- calculate final total -->
             <button class="btn btn-primary" onclick="getPrice()">Get total</button>
@@ -43,7 +46,6 @@
             <button class="btn btn-primary" onclick="confirm()">Place Your Order</button>
         </div>
         </div>
-
         <script src="cart.js"></script>
 </body>
 

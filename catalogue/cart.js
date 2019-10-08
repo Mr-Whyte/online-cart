@@ -10,6 +10,7 @@ document.getElementById("itemTotal").append(total);
 var itemsArray = JSON.parse(sessionStorage.getItem("Items"));
 var items = document.getElementById("Stuff");
 console.log(itemsArray);
+console.log(total);
 // this code gets the items from variable a and for each item the user purchased create a div and display these items
 itemsArray.forEach(function(z) {
     var div = document.createElement("div");
@@ -26,18 +27,22 @@ function getPrice() {
 
 // check if the radio button delivery is click if so add this delivery cost to the total
 function radio() {
-    if (document.getElementById("yes").checked) {
+    if (document.getElementById("delivery").checked) {
         total = total += delivery;
         console.log(total);
-    } else {
-
     }
+}
 
+function discount(){
+    if (document.getElementById("coupon").checked) {
+        total = total -= coupon;
+        console.log(total);
+    }
 }
 
 // once purchase is confirmed provide the user with a reference number for them to call or query about their items
 function confirm() {
     alert("your purchase for R" + total +" was succesfull, here is your reference number: " + Math.floor(100000 + Math.random() * 900000))
-    localStorage.clear();
+    window.parent.caches.delete("call")
 }
 
